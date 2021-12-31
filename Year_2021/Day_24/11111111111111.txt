@@ -1,0 +1,533 @@
+inp w : 
+w = 1
+mul x 0: 
+(x)0 * (0)0 = 0 in x
+add x z: 
+(x)0 + (z)0 = 0 in x
+mod x 26: 
+Modulo by zero
+div z 1: 
+(z)0 / (1)1 = 0 in z
+add x 10: 
+(x)0 + (10)10 = 10 in x
+eql x w: 
+(x)10 != (w)1. Set x to 0
+eql x 0: 
+(x)0 == (0)0. Set x to 1
+mul y 0: 
+(y)0 * (0)0 = 0 in y
+add y 25: 
+(y)0 + (25)25 = 25 in y
+mul y x: 
+(y)25 * (x)1 = 25 in y
+add y 1: 
+(y)25 + (1)1 = 26 in y
+mul z y: 
+(z)0 * (y)26 = 0 in z
+mul y 0: 
+(y)26 * (0)0 = 0 in y
+add y w: 
+(y)0 + (w)1 = 1 in y
+add y 0: 
+(y)1 + (0)0 = 1 in y
+mul y x: 
+(y)1 * (x)1 = 1 in y
+add z y: 
+(z)0 + (y)1 = 1 in z
+prt  : 
+1 1 1 1
+inp w : 
+w = 1
+mul x 0: 
+(x)1 * (0)0 = 0 in x
+add x z: 
+(x)0 + (z)1 = 1 in x
+mod x 26: 
+(x)1 % (26)26 = 1 in x
+div z 1: 
+(z)1 / (1)1 = 1 in z
+add x 12: 
+(x)1 + (12)12 = 13 in x
+eql x w: 
+(x)13 != (w)1. Set x to 0
+eql x 0: 
+(x)0 == (0)0. Set x to 1
+mul y 0: 
+(y)1 * (0)0 = 0 in y
+add y 25: 
+(y)0 + (25)25 = 25 in y
+mul y x: 
+(y)25 * (x)1 = 25 in y
+add y 1: 
+(y)25 + (1)1 = 26 in y
+mul z y: 
+(z)1 * (y)26 = 26 in z
+mul y 0: 
+(y)26 * (0)0 = 0 in y
+add y w: 
+(y)0 + (w)1 = 1 in y
+add y 6: 
+(y)1 + (6)6 = 7 in y
+mul y x: 
+(y)7 * (x)1 = 7 in y
+add z y: 
+(z)26 + (y)7 = 33 in z
+prt  : 
+1 1 7 33
+inp w : 
+w = 1
+mul x 0: 
+(x)1 * (0)0 = 0 in x
+add x z: 
+(x)0 + (z)33 = 33 in x
+mod x 26: 
+(x)33 % (26)26 = 7 in x
+div z 1: 
+(z)33 / (1)1 = 33 in z
+add x 13: 
+(x)7 + (13)13 = 20 in x
+eql x w: 
+(x)20 != (w)1. Set x to 0
+eql x 0: 
+(x)0 == (0)0. Set x to 1
+mul y 0: 
+(y)7 * (0)0 = 0 in y
+add y 25: 
+(y)0 + (25)25 = 25 in y
+mul y x: 
+(y)25 * (x)1 = 25 in y
+add y 1: 
+(y)25 + (1)1 = 26 in y
+mul z y: 
+(z)33 * (y)26 = 858 in z
+mul y 0: 
+(y)26 * (0)0 = 0 in y
+add y w: 
+(y)0 + (w)1 = 1 in y
+add y 4: 
+(y)1 + (4)4 = 5 in y
+mul y x: 
+(y)5 * (x)1 = 5 in y
+add z y: 
+(z)858 + (y)5 = 863 in z
+prt  : 
+1 1 5 863
+inp w : 
+w = 1
+mul x 0: 
+(x)1 * (0)0 = 0 in x
+add x z: 
+(x)0 + (z)863 = 863 in x
+mod x 26: 
+(x)863 % (26)26 = 5 in x
+div z 1: 
+(z)863 / (1)1 = 863 in z
+add x 13: 
+(x)5 + (13)13 = 18 in x
+eql x w: 
+(x)18 != (w)1. Set x to 0
+eql x 0: 
+(x)0 == (0)0. Set x to 1
+mul y 0: 
+(y)5 * (0)0 = 0 in y
+add y 25: 
+(y)0 + (25)25 = 25 in y
+mul y x: 
+(y)25 * (x)1 = 25 in y
+add y 1: 
+(y)25 + (1)1 = 26 in y
+mul z y: 
+(z)863 * (y)26 = 22438 in z
+mul y 0: 
+(y)26 * (0)0 = 0 in y
+add y w: 
+(y)0 + (w)1 = 1 in y
+add y 2: 
+(y)1 + (2)2 = 3 in y
+mul y x: 
+(y)3 * (x)1 = 3 in y
+add z y: 
+(z)22438 + (y)3 = 22441 in z
+prt  : 
+1 1 3 22441
+inp w : 
+w = 1
+mul x 0: 
+(x)1 * (0)0 = 0 in x
+add x z: 
+(x)0 + (z)22441 = 22441 in x
+mod x 26: 
+(x)22441 % (26)26 = 3 in x
+div z 1: 
+(z)22441 / (1)1 = 22441 in z
+add x 14: 
+(x)3 + (14)14 = 17 in x
+eql x w: 
+(x)17 != (w)1. Set x to 0
+eql x 0: 
+(x)0 == (0)0. Set x to 1
+mul y 0: 
+(y)3 * (0)0 = 0 in y
+add y 25: 
+(y)0 + (25)25 = 25 in y
+mul y x: 
+(y)25 * (x)1 = 25 in y
+add y 1: 
+(y)25 + (1)1 = 26 in y
+mul z y: 
+(z)22441 * (y)26 = 583466 in z
+mul y 0: 
+(y)26 * (0)0 = 0 in y
+add y w: 
+(y)0 + (w)1 = 1 in y
+add y 9: 
+(y)1 + (9)9 = 10 in y
+mul y x: 
+(y)10 * (x)1 = 10 in y
+add z y: 
+(z)583466 + (y)10 = 583476 in z
+prt  : 
+1 1 10 583476
+inp w : 
+w = 1
+mul x 0: 
+(x)1 * (0)0 = 0 in x
+add x z: 
+(x)0 + (z)583476 = 583476 in x
+mod x 26: 
+(x)583476 % (26)26 = 10 in x
+div z 26: 
+(z)583476 / (26)26 = 22441 in z
+add x -2: 
+(x)10 + (-2)-2 = 8 in x
+eql x w: 
+(x)8 != (w)1. Set x to 0
+eql x 0: 
+(x)0 == (0)0. Set x to 1
+mul y 0: 
+(y)10 * (0)0 = 0 in y
+add y 25: 
+(y)0 + (25)25 = 25 in y
+mul y x: 
+(y)25 * (x)1 = 25 in y
+add y 1: 
+(y)25 + (1)1 = 26 in y
+mul z y: 
+(z)22441 * (y)26 = 583466 in z
+mul y 0: 
+(y)26 * (0)0 = 0 in y
+add y w: 
+(y)0 + (w)1 = 1 in y
+add y 1: 
+(y)1 + (1)1 = 2 in y
+mul y x: 
+(y)2 * (x)1 = 2 in y
+add z y: 
+(z)583466 + (y)2 = 583468 in z
+prt  : 
+1 1 2 583468
+inp w : 
+w = 1
+mul x 0: 
+(x)1 * (0)0 = 0 in x
+add x z: 
+(x)0 + (z)583468 = 583468 in x
+mod x 26: 
+(x)583468 % (26)26 = 2 in x
+div z 1: 
+(z)583468 / (1)1 = 583468 in z
+add x 11: 
+(x)2 + (11)11 = 13 in x
+eql x w: 
+(x)13 != (w)1. Set x to 0
+eql x 0: 
+(x)0 == (0)0. Set x to 1
+mul y 0: 
+(y)2 * (0)0 = 0 in y
+add y 25: 
+(y)0 + (25)25 = 25 in y
+mul y x: 
+(y)25 * (x)1 = 25 in y
+add y 1: 
+(y)25 + (1)1 = 26 in y
+mul z y: 
+(z)583468 * (y)26 = 15170168 in z
+mul y 0: 
+(y)26 * (0)0 = 0 in y
+add y w: 
+(y)0 + (w)1 = 1 in y
+add y 10: 
+(y)1 + (10)10 = 11 in y
+mul y x: 
+(y)11 * (x)1 = 11 in y
+add z y: 
+(z)15170168 + (y)11 = 15170179 in z
+prt  : 
+1 1 11 15170179
+inp w : 
+w = 1
+mul x 0: 
+(x)1 * (0)0 = 0 in x
+add x z: 
+(x)0 + (z)15170179 = 15170179 in x
+mod x 26: 
+(x)15170179 % (26)26 = 11 in x
+div z 26: 
+(z)15170179 / (26)26 = 583468 in z
+add x -15: 
+(x)11 + (-15)-15 = -4 in x
+eql x w: 
+(x)-4 != (w)1. Set x to 0
+eql x 0: 
+(x)0 == (0)0. Set x to 1
+mul y 0: 
+(y)11 * (0)0 = 0 in y
+add y 25: 
+(y)0 + (25)25 = 25 in y
+mul y x: 
+(y)25 * (x)1 = 25 in y
+add y 1: 
+(y)25 + (1)1 = 26 in y
+mul z y: 
+(z)583468 * (y)26 = 15170168 in z
+mul y 0: 
+(y)26 * (0)0 = 0 in y
+add y w: 
+(y)0 + (w)1 = 1 in y
+add y 6: 
+(y)1 + (6)6 = 7 in y
+mul y x: 
+(y)7 * (x)1 = 7 in y
+add z y: 
+(z)15170168 + (y)7 = 15170175 in z
+prt  : 
+1 1 7 15170175
+inp w : 
+w = 1
+mul x 0: 
+(x)1 * (0)0 = 0 in x
+add x z: 
+(x)0 + (z)15170175 = 15170175 in x
+mod x 26: 
+(x)15170175 % (26)26 = 7 in x
+div z 26: 
+(z)15170175 / (26)26 = 583468 in z
+add x -10: 
+(x)7 + (-10)-10 = -3 in x
+eql x w: 
+(x)-3 != (w)1. Set x to 0
+eql x 0: 
+(x)0 == (0)0. Set x to 1
+mul y 0: 
+(y)7 * (0)0 = 0 in y
+add y 25: 
+(y)0 + (25)25 = 25 in y
+mul y x: 
+(y)25 * (x)1 = 25 in y
+add y 1: 
+(y)25 + (1)1 = 26 in y
+mul z y: 
+(z)583468 * (y)26 = 15170168 in z
+mul y 0: 
+(y)26 * (0)0 = 0 in y
+add y w: 
+(y)0 + (w)1 = 1 in y
+add y 4: 
+(y)1 + (4)4 = 5 in y
+mul y x: 
+(y)5 * (x)1 = 5 in y
+add z y: 
+(z)15170168 + (y)5 = 15170173 in z
+prt  : 
+1 1 5 15170173
+inp w : 
+w = 1
+mul x 0: 
+(x)1 * (0)0 = 0 in x
+add x z: 
+(x)0 + (z)15170173 = 15170173 in x
+mod x 26: 
+(x)15170173 % (26)26 = 5 in x
+div z 1: 
+(z)15170173 / (1)1 = 15170173 in z
+add x 10: 
+(x)5 + (10)10 = 15 in x
+eql x w: 
+(x)15 != (w)1. Set x to 0
+eql x 0: 
+(x)0 == (0)0. Set x to 1
+mul y 0: 
+(y)5 * (0)0 = 0 in y
+add y 25: 
+(y)0 + (25)25 = 25 in y
+mul y x: 
+(y)25 * (x)1 = 25 in y
+add y 1: 
+(y)25 + (1)1 = 26 in y
+mul z y: 
+(z)15170173 * (y)26 = 394424498 in z
+mul y 0: 
+(y)26 * (0)0 = 0 in y
+add y w: 
+(y)0 + (w)1 = 1 in y
+add y 6: 
+(y)1 + (6)6 = 7 in y
+mul y x: 
+(y)7 * (x)1 = 7 in y
+add z y: 
+(z)394424498 + (y)7 = 394424505 in z
+prt  : 
+1 1 7 394424505
+inp w : 
+w = 1
+mul x 0: 
+(x)1 * (0)0 = 0 in x
+add x z: 
+(x)0 + (z)394424505 = 394424505 in x
+mod x 26: 
+(x)394424505 % (26)26 = 7 in x
+div z 26: 
+(z)394424505 / (26)26 = 15170173 in z
+add x -10: 
+(x)7 + (-10)-10 = -3 in x
+eql x w: 
+(x)-3 != (w)1. Set x to 0
+eql x 0: 
+(x)0 == (0)0. Set x to 1
+mul y 0: 
+(y)7 * (0)0 = 0 in y
+add y 25: 
+(y)0 + (25)25 = 25 in y
+mul y x: 
+(y)25 * (x)1 = 25 in y
+add y 1: 
+(y)25 + (1)1 = 26 in y
+mul z y: 
+(z)15170173 * (y)26 = 394424498 in z
+mul y 0: 
+(y)26 * (0)0 = 0 in y
+add y w: 
+(y)0 + (w)1 = 1 in y
+add y 3: 
+(y)1 + (3)3 = 4 in y
+mul y x: 
+(y)4 * (x)1 = 4 in y
+add z y: 
+(z)394424498 + (y)4 = 394424502 in z
+prt  : 
+1 1 4 394424502
+inp w : 
+w = 1
+mul x 0: 
+(x)1 * (0)0 = 0 in x
+add x z: 
+(x)0 + (z)394424502 = 394424502 in x
+mod x 26: 
+(x)394424502 % (26)26 = 4 in x
+div z 26: 
+(z)394424502 / (26)26 = 15170173 in z
+add x -4: 
+(x)4 + (-4)-4 = 0 in x
+eql x w: 
+(x)0 != (w)1. Set x to 0
+eql x 0: 
+(x)0 == (0)0. Set x to 1
+mul y 0: 
+(y)4 * (0)0 = 0 in y
+add y 25: 
+(y)0 + (25)25 = 25 in y
+mul y x: 
+(y)25 * (x)1 = 25 in y
+add y 1: 
+(y)25 + (1)1 = 26 in y
+mul z y: 
+(z)15170173 * (y)26 = 394424498 in z
+mul y 0: 
+(y)26 * (0)0 = 0 in y
+add y w: 
+(y)0 + (w)1 = 1 in y
+add y 9: 
+(y)1 + (9)9 = 10 in y
+mul y x: 
+(y)10 * (x)1 = 10 in y
+add z y: 
+(z)394424498 + (y)10 = 394424508 in z
+prt  : 
+1 1 10 394424508
+inp w : 
+w = 1
+mul x 0: 
+(x)1 * (0)0 = 0 in x
+add x z: 
+(x)0 + (z)394424508 = 394424508 in x
+mod x 26: 
+(x)394424508 % (26)26 = 10 in x
+div z 26: 
+(z)394424508 / (26)26 = 15170173 in z
+add x -1: 
+(x)10 + (-1)-1 = 9 in x
+eql x w: 
+(x)9 != (w)1. Set x to 0
+eql x 0: 
+(x)0 == (0)0. Set x to 1
+mul y 0: 
+(y)10 * (0)0 = 0 in y
+add y 25: 
+(y)0 + (25)25 = 25 in y
+mul y x: 
+(y)25 * (x)1 = 25 in y
+add y 1: 
+(y)25 + (1)1 = 26 in y
+mul z y: 
+(z)15170173 * (y)26 = 394424498 in z
+mul y 0: 
+(y)26 * (0)0 = 0 in y
+add y w: 
+(y)0 + (w)1 = 1 in y
+add y 15: 
+(y)1 + (15)15 = 16 in y
+mul y x: 
+(y)16 * (x)1 = 16 in y
+add z y: 
+(z)394424498 + (y)16 = 394424514 in z
+prt  : 
+1 1 16 394424514
+inp w : 
+w = 1
+mul x 0: 
+(x)1 * (0)0 = 0 in x
+add x z: 
+(x)0 + (z)394424514 = 394424514 in x
+mod x 26: 
+(x)394424514 % (26)26 = 16 in x
+div z 26: 
+(z)394424514 / (26)26 = 15170173 in z
+add x -1: 
+(x)16 + (-1)-1 = 15 in x
+eql x w: 
+(x)15 != (w)1. Set x to 0
+eql x 0: 
+(x)0 == (0)0. Set x to 1
+mul y 0: 
+(y)16 * (0)0 = 0 in y
+add y 25: 
+(y)0 + (25)25 = 25 in y
+mul y x: 
+(y)25 * (x)1 = 25 in y
+add y 1: 
+(y)25 + (1)1 = 26 in y
+mul z y: 
+(z)15170173 * (y)26 = 394424498 in z
+mul y 0: 
+(y)26 * (0)0 = 0 in y
+add y w: 
+(y)0 + (w)1 = 1 in y
+add y 5: 
+(y)1 + (5)5 = 6 in y
+mul y x: 
+(y)6 * (x)1 = 6 in y
+add z y: 
+(z)394424498 + (y)6 = 394424504 in z
+11111111111111 -> 
+1 1 6 394424504
+Failure
