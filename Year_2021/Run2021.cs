@@ -12,6 +12,7 @@ using AdventToCode.Year_2021.Day_13;
 using AdventToCode.Year_2021.Day_15;
 using AdventToCode.Year_2021.Day_21;
 using AdventToCode.Year_2021.Day_24;
+using AdventToCode.Year_2021.Day_25;
 using AdventToCode.Year_2021.Helper;
 
 namespace AdventToCode.Year_2021;
@@ -55,10 +56,10 @@ public static class Run2021
         //Day_07.TheTreacheryOfWhales.CountFuelPart2(positions);
 
         //Day 08
-        var patterns = new List<List<string>>();
-        var digits = new List<List<string>>();
-        FileReader.ReadLinesOfFileAsDigits(@"/Users/digi/Programmierung/AdventToCode/Year_2021/Day_08/digits.txt", out patterns, out digits);
-        SevenSegmentSearch.CalculatePart2(patterns, digits);
+        // var patterns = new List<List<string>>();
+        // var digits = new List<List<string>>();
+        // FileReader.ReadLinesOfFileAsDigits(@"/Users/digi/Programmierung/AdventToCode/Year_2021/Day_08/digits.txt", out patterns, out digits);
+        // SevenSegmentSearch.CalculatePart2(patterns, digits);
 
         //Day 09
         // var heights = FileReader.ReadFile(@"/Users/digi/Programmierung/AdventToCode/Year_2021/Day_09/heightmap.txt");
@@ -84,6 +85,10 @@ public static class Run2021
         //Day 24      
         // var instructions = FileReader.ReadLineOfFileAsInstructions(@"/Users/digi/Programmierung/AdventToCode/Year_2021/Day_24/instructions.txt");
         // ArithmeticLogicUnit.Run(instructions);
+
+        //Day 25
+        var input = FileReader.ReadLinesOfFileAsHerds(@"/Users/digi/Programmierung/AdventToCode/Year_2021/Day_25/seaCucumberHerds.txt");
+        SeaCucumber.Run(input);
 
         Console.WriteLine("End of Program");
     }

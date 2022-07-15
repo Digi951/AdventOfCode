@@ -1,3 +1,5 @@
+using System.Text;
+
 namespace AdventToCode.Year_2021.Helper;
 
 public static class FileReader
@@ -139,5 +141,22 @@ public static class FileReader
 
         patterns = localPatterns;
         digits = localDigits;
+    }
+
+    public static List<List<char>> ReadLinesOfFileAsHerds(string path)
+    {
+        var lines = File.ReadAllLines(path);
+        var herds = new List<List<char>>();
+
+        foreach(var line in lines)
+        {
+            var split = line.ToCharArray();
+            var herd = new List<char>();
+
+            split.Where(x => x != ' ').ToList().ForEach(x => herd.Add(x));
+            herds.Add(herd);
+        }
+
+        return herds;
     }
 }
