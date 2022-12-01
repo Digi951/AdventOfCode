@@ -7,4 +7,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Extensions\" />
+    <None Remove="Year_2022\" />
+    <None Remove="Year_2022\Day_01\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Extensions\" />
+    <Folder Include="Year_2022\" />
+    <Folder Include="Year_2022\Day_01\" />
+  </ItemGroup>
 </Project>

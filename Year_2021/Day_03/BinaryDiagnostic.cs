@@ -1,3 +1,5 @@
+using AdventToCode.Extensions;
+
 namespace AdventToCode.Year_2021.Day_03;
 
 public static class BinaryDiagnostic
@@ -9,7 +11,7 @@ public static class BinaryDiagnostic
 
         foreach(var input in inputs)
         {
-            for(int i = 0; i < input.Length; i++)
+            foreach(int i in 0..input.Length)
             {
                 if(input[i] == '0')
                 {
@@ -38,7 +40,7 @@ public static class BinaryDiagnostic
 
         var epsilonResultBinary = new int[inputs[0].Length];
 
-        for (int i = 0; i < countOnes.Length; i++)
+        foreach (int i in 0..countOnes.Length)
         {
             epsilonResultBinary[i] = countZeros[i] < countOnes[i] ? 0 : 1;
         }
@@ -98,7 +100,7 @@ public static class BinaryDiagnostic
         var countOnes = 0;
         var Ones = new List<string>();
 
-        for(int i = 0; i < inputs.Count;i++)
+        foreach(int i in 0..inputs.Count)
         {
             if(inputs[i][index] == '0')
             {
