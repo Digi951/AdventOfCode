@@ -12,11 +12,13 @@
     <None Remove="Year_2022\" />
     <None Remove="Year_2022\Day_01\" />
     <None Remove="Year_2022\Day_02\" />
+    <None Remove="Year_2022\Day_03\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Extensions\" />
     <Folder Include="Year_2022\" />
     <Folder Include="Year_2022\Day_01\" />
     <Folder Include="Year_2022\Day_02\" />
+    <Folder Include="Year_2022\Day_03\" />
   </ItemGroup>
 </Project>
