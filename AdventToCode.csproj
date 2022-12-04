@@ -13,6 +13,7 @@
     <None Remove="Year_2022\Day_01\" />
     <None Remove="Year_2022\Day_02\" />
     <None Remove="Year_2022\Day_03\" />
+    <None Remove="Year_2022\Day_04\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Extensions\" />
@@ -20,5 +21,6 @@
     <Folder Include="Year_2022\Day_01\" />
     <Folder Include="Year_2022\Day_02\" />
     <Folder Include="Year_2022\Day_03\" />
+    <Folder Include="Year_2022\Day_04\" />
   </ItemGroup>
 </Project>

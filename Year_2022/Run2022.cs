@@ -1,6 +1,7 @@
 using AdventToCode.Year_2022.Day_01;
 using AdventToCode.Year_2022.Day_02;
 using AdventToCode.Year_2022.Day_03;
+using AdventToCode.Year_2022.Day_04;
 
 namespace AdventToCode.Year_2022
 {
@@ -19,8 +20,14 @@ namespace AdventToCode.Year_2022
             // var result = RockPaperScissor.Calculate2(input);
 
             // Day 03
-            var input = GlobalHelper.GlobalFileReader.GetAllLines(@"/Users/digi/Programmierung/AdventToCode/Year_2022/Day_03/RucksackCompartments.txt");
-            var result = RucksackReorganization.Calculate2(input);
+            // var input = GlobalHelper.GlobalFileReader.GetAllLines(@"/Users/digi/Programmierung/AdventToCode/Year_2022/Day_03/RucksackCompartments.txt");
+            // var result = RucksackReorganization.Calculate2(input);
+            // var result = RucksackReorganization.Calculate2(input);
+
+            // Day 04
+            var input = GlobalHelper.GlobalFileReader.GetAllLines(@"/Users/digi/Programmierung/AdventToCode/Year_2022/Day_04/AssignmentPairs.txt");
+            // var result = CampCleanup.Calculate(input);
+            var result = CampCleanup.Calculate2(input);
 
 
             Console.WriteLine("### " + result + " ###");

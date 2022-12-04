@@ -1,11 +1,11 @@
 ﻿<Properties StartupConfiguration="{3167115E-0195-48B7-AB3E-E63D38FD4772}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Year_2022/Day_03/RucksackReorganization.cs">
+  <MonoDevelop.Ide.ItemProperties.AdventToCode PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ReadMe.md">
     <Files>
-      <File FileName="Year_2022/Run2022.cs" Line="23" Column="1" />
-      <File FileName="Year_2022/Day_03/RucksackReorganization.cs" Line="63" Column="16" />
-      <File FileName="Year_2022/Day_03/RucksackCompartments.txt" Line="6" Column="25" />
+      <File FileName="Year_2022/Run2022.cs" Line="27" Column="1" />
+      <File FileName="Year_2022/Day_03/RucksackReorganization.cs" Line="79" Column="1" />
+      <File FileName="Year_2022/Day_03/RucksackCompartments.txt" Line="300" Column="21" />
+      <File FileName="ReadMe.md" Line="13" Column="27" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,20 +20,19 @@
                 <Node name="Day_03" expanded="True" />
                 <Node name="Helper" expanded="True" />
               </Node>
+              <Node name="ReadMe.md" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/digi/Programmierung/AdventToCode/Year_2022/Run2022.cs" relfile="Year_2022/Run2022.cs" line="23" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.AdventToCode PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
