@@ -1,4 +1,4 @@
-namespace AdventToCode.Year_2021.Day_13;
+namespace AdventOfCode.Year_2021.Day_13;
 
 public static class TransparentOrigami
 {

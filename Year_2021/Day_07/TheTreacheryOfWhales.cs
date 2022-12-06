@@ -1,4 +1,4 @@
-namespace AdventToCode.Year_2021.Day_07;
+namespace AdventOfCode.Year_2021.Day_07;
 
 public class TheTreacheryOfWhales
 {

@@ -1,4 +1,4 @@
-namespace AdventToCode.Year_2021.Day_05;
+namespace AdventOfCode.Year_2021.Day_05;
 
 public static class HydrothermalVenture
 {

@@ -1,4 +1,4 @@
-namespace AdventToCode.Year_2021.Day_21;
+namespace AdventOfCode.Year_2021.Day_21;
 
 public static class DiracDice
 {

@@ -1,21 +1,21 @@
-using AdventToCode.Year_2021.Day_01;
-using AdventToCode.Year_2021.Day_02;
-using AdventToCode.Year_2021.Day_03;
-using AdventToCode.Year_2021.Day_04;
-using AdventToCode.Year_2021.Day_05;
-using AdventToCode.Year_2021.Day_06;
-using AdventToCode.Year_2021.Day_07;
-using AdventToCode.Year_2021.Day_08;
-using AdventToCode.Year_2021.Day_09;
-using AdventToCode.Year_2021.Day_10;
-using AdventToCode.Year_2021.Day_13;
-using AdventToCode.Year_2021.Day_15;
-using AdventToCode.Year_2021.Day_21;
-using AdventToCode.Year_2021.Day_24;
-using AdventToCode.Year_2021.Day_25;
-using AdventToCode.Year_2021.Helper;
+using AdventOfCode.Year_2021.Day_01;
+using AdventOfCode.Year_2021.Day_02;
+using AdventOfCode.Year_2021.Day_03;
+using AdventOfCode.Year_2021.Day_04;
+using AdventOfCode.Year_2021.Day_05;
+using AdventOfCode.Year_2021.Day_06;
+using AdventOfCode.Year_2021.Day_07;
+using AdventOfCode.Year_2021.Day_08;
+using AdventOfCode.Year_2021.Day_09;
+using AdventOfCode.Year_2021.Day_10;
+using AdventOfCode.Year_2021.Day_13;
+using AdventOfCode.Year_2021.Day_15;
+using AdventOfCode.Year_2021.Day_21;
+using AdventOfCode.Year_2021.Day_24;
+using AdventOfCode.Year_2021.Day_25;
+using AdventOfCode.Year_2021.Helper;
 
-namespace AdventToCode.Year_2021;
+namespace AdventOfCode.Year_2021;
 
 public static class Run2021
 {

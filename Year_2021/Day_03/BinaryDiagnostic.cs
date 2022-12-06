@@ -1,6 +1,6 @@
-using AdventToCode.Extensions;
+using AdventOfCode.Extensions;
 
-namespace AdventToCode.Year_2021.Day_03;
+namespace AdventOfCode.Year_2021.Day_03;
 
 public static class BinaryDiagnostic
 {

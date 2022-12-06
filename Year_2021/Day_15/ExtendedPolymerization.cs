@@ -1,4 +1,4 @@
-namespace AdventToCode.Year_2021.Day_15;
+namespace AdventOfCode.Year_2021.Day_15;
 
 public static class ExtendedPolymerization
 {

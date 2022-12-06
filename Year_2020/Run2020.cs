@@ -1,7 +1,7 @@
-using AdventToCode.Year_2020.Day_01;
-using AdventToCode.Year_2020.Helper;
+using AdventOfCode.Year_2020.Day_01;
+using AdventOfCode.Year_2020.Helper;
 
-namespace AdventToCode.Year_2020;
+namespace AdventOfCode.Year_2020;
 
 public static class Run2020
 {

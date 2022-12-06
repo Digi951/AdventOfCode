@@ -1,4 +1,4 @@
-namespace AdventToCode.Year_2021.Day_25;
+namespace AdventOfCode.Year_2021.Day_25;
 
 public static class SeaCucumber
 {

@@ -1,5 +1,5 @@
 
-namespace AdventToCode.GlobalHelper
+namespace AdventOfCode.GlobalHelper
 {
     public static class GlobalFileReader
     {

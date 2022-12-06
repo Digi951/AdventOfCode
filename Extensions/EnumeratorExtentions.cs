@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AdventToCode.Extensions;
+namespace AdventOfCode.Extensions;
 
 public static class EnumeratorExtensions
 {

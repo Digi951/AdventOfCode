@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace AdventToCode.Year_2022.Day_05;
+namespace AdventOfCode.Year_2022.Day_05;
 
 public static class SupplyStacks
 {

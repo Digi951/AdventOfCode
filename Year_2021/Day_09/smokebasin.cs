@@ -1,4 +1,4 @@
-namespace AdventToCode.Year_2021.Day_09;
+namespace AdventOfCode.Year_2021.Day_09;
 
 public static class smokebasin
 {

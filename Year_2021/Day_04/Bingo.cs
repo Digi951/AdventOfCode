@@ -1,4 +1,4 @@
-namespace AdventToCode.Year_2021.Day_04;
+namespace AdventOfCode.Year_2021.Day_04;
 
 public static class Bingo
 {

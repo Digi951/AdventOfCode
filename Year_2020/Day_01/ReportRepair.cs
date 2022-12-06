@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AdventToCode.Year_2020.Day_01;
+namespace AdventOfCode.Year_2020.Day_01;
 
 public static class ReportRepair
 {

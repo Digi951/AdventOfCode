@@ -1,8 +1,8 @@
 using System.Numerics;
 using System.Text;
-using AdventToCode.Year_2021.Helper;
+using AdventOfCode.Year_2021.Helper;
 
-namespace AdventToCode.Year_2021.Day_24;
+namespace AdventOfCode.Year_2021.Day_24;
 
 public static class ArithmeticLogicUnit
 {

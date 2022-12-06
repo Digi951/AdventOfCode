@@ -1,10 +1,11 @@
-using AdventToCode.Year_2022.Day_01;
-using AdventToCode.Year_2022.Day_02;
-using AdventToCode.Year_2022.Day_03;
-using AdventToCode.Year_2022.Day_04;
-using AdventToCode.Year_2022.Day_05;
+using AdventOfCode.Year_2022.Day_01;
+using AdventOfCode.Year_2022.Day_02;
+using AdventOfCode.Year_2022.Day_03;
+using AdventOfCode.Year_2022.Day_04;
+using AdventOfCode.Year_2022.Day_05;
+using AdventOfCode.Year_2022.Day_06;
 
-namespace AdventToCode.Year_2022
+namespace AdventOfCode.Year_2022
 {
     public class Run2022
     {
@@ -31,10 +32,13 @@ namespace AdventToCode.Year_2022
             // var result = CampCleanup.Calculate2(input);
 
             // Day 05
-            var input = GlobalHelper.GlobalFileReader.GetAllLines(@"/Users/digi/Programmierung/AdventToCode/Year_2022/Day_05/Procedure.txt");
+            // var input = GlobalHelper.GlobalFileReader.GetAllLines(@"/Users/digi/Programmierung/AdventToCode/Year_2022/Day_05/Procedure.txt");
             // var result = SupplyStacks.Calculate(input);
-            var result = SupplyStacks.Calculate2(input);
+            //var result = SupplyStacks.Calculate2(input);
 
+            // Day 06
+            var input = GlobalHelper.GlobalFileReader.GetAllLines(@"/Users/digi/Programmierung/AdventToCode/Year_2022/Day_06/DataStream.txt");
+            var result = TuningTrouble.Calculate(input);
 
             Console.WriteLine("### " + result + " ###");
             Console.ReadKey();

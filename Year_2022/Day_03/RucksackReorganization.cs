@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AdventToCode.Year_2022.Day_03;
+namespace AdventOfCode.Year_2022.Day_03;
 
 public static class RucksackReorganization
 {

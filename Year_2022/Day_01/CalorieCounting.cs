@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using AdventToCode.Extensions;
+using AdventOfCode.Extensions;
 
-namespace AdventToCode.Year_2022.Day_01;
+namespace AdventOfCode.Year_2022.Day_01;
 
 public static class CalorieCounting
 {

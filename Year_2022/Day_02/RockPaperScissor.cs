@@ -1,5 +1,5 @@
 ﻿using System;
-namespace AdventToCode.Year_2022.Day_02;
+namespace AdventOfCode.Year_2022.Day_02;
 
 public static class RockPaperScissor
 {

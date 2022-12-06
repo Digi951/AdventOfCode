@@ -1,4 +1,4 @@
-namespace AdventToCode.Year_2021.Day_10;
+namespace AdventOfCode.Year_2021.Day_10;
 
 public static class SyntaxScoring
 {

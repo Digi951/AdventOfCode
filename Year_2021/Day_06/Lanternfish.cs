@@ -1,4 +1,4 @@
-namespace AdventToCode.Year_2021.Day_06;
+namespace AdventOfCode.Year_2021.Day_06;
 
 public static class Lanternfish
 {

@@ -1,4 +1,4 @@
-namespace AdventToCode.Year_2021.Day_08;
+namespace AdventOfCode.Year_2021.Day_08;
 
 public static class SevenSegmentSearch
 {

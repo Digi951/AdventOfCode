@@ -1,4 +1,4 @@
-namespace AdventToCode.Year_2021.Day_02;
+namespace AdventOfCode.Year_2021.Day_02;
 
 public static class Dive
 {

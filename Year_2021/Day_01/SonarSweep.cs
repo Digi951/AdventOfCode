@@ -1,6 +1,6 @@
-using AdventToCode.Extensions;
+using AdventOfCode.Extensions;
 
-namespace AdventToCode.Year_2021.Day_01;
+namespace AdventOfCode.Year_2021.Day_01;
 
 public static class SonarSweep
 {

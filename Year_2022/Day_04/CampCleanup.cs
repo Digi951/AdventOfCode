@@ -1,5 +1,5 @@
 ﻿using System;
-namespace AdventToCode.Year_2022.Day_04;
+namespace AdventOfCode.Year_2022.Day_04;
 
 public static class CampCleanup
 {
