@@ -4,27 +4,69 @@ public static class TuningTrouble
 {
     public static Int32 Calculate(List<String> inputs)
     {
-        var fifo = new Queue<String>(4);
+        const Int32 character_Package = 4;
 
-        for (int i = 0; i < 4; i++)
+        var fifo = new Queue<String>(character_Package);
+
+        var input = new String(inputs[0]);
+
+        Int32 index = 0;
+
+        for (index = 0; index < input.Length; index++)
         {
-            fifo.Enqueue(inputs[i]);
+            fifo.Enqueue(input[index].ToString());
+
+            if (fifo.Count > character_Package) { fifo.Dequeue(); }
+
+            if (fifo.Count == character_Package && AreCharactersUnique(fifo))
+            {
+                return index + 1;
+            }            
         }
 
-        
+        return 0;
+    }
 
-        Int32 result = 0;
+    public static Int32 Calculate2(List<String> inputs)
+    {
+        const Int32 character_Package = 14;
 
-        return result;
+        var fifo = new Queue<String>(character_Package);
+
+        var input = new String(inputs[0]);
+
+        Int32 index = 0;
+
+        for (index = 0; index < input.Length; index++)
+        {
+            fifo.Enqueue(input[index].ToString());
+
+            if (fifo.Count > character_Package) { fifo.Dequeue(); }
+
+            if (fifo.Count == character_Package && AreCharactersUnique(fifo))
+            {
+                return index + 1;
+            }
+        }
+
+        return 0;
     }
 
     private static Boolean AreCharactersUnique(Queue<String> inputs)
     {
         var temp = inputs.ToList();
-        return temp[0] != temp[1] 
-            && temp[1] != temp[2] 
-            && temp[2] != temp[3]
-            && temp[3] != temp[4]
-            && temp[4] != temp[0];
+
+        for (int i = 0; i < inputs.Count; i++)
+        {
+            for (int j = i + 1; j < inputs.Count; j++)
+            {
+                if (temp[i] == temp[j])
+                {
+                    return false;
+                }
+            }
+        }
+
+        return true;
     }
 }

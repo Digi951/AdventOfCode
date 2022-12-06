@@ -38,7 +38,8 @@ namespace AdventOfCode.Year_2022
 
             // Day 06
             var input = GlobalHelper.GlobalFileReader.GetAllLines(@"/Users/digi/Programmierung/AdventToCode/Year_2022/Day_06/DataStream.txt");
-            var result = TuningTrouble.Calculate(input);
+            // var result = TuningTrouble.Calculate(input);
+            var result = TuningTrouble.Calculate2(input);
 
             Console.WriteLine("### " + result + " ###");
             Console.ReadKey();
