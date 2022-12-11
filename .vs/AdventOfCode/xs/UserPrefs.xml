@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{3167115E-0195-48B7-AB3E-E63D38FD4772}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Year_2022/Day_10/CathodeRayTube.cs">
+    <Files>
+      <File FileName="Year_2022/Run2022.cs" Line="53" Column="1" />
+      <File FileName="Year_2022/Day_10/CathodeRayTube.cs" Line="179" Column="1" />
+      <File FileName="Year_2022/Day_10/Instructions.txt" Line="140" Column="5" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AdventOfCode" expanded="True">
+            <Node name="AdventOfCode" expanded="True">
+              <Node name="GlobalHelper" expanded="True" />
+              <Node name="Year_2022" expanded="True">
+                <Node name="Day_10" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/digi/Programmierung/AdventToCode/Year_2022/Day_07/NoSpaceLeftOnDevice.cs" relfile="Year_2022/Day_07/NoSpaceLeftOnDevice.cs" line="10" column="1" />
+      <Breakpoint file="/Users/digi/Programmierung/AdventToCode/Year_2022/Run2022.cs" relfile="Year_2022/Run2022.cs" line="53" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.AdventOfCode PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
