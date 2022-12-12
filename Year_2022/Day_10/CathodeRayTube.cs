@@ -14,7 +14,7 @@ public static class CathodeRayTube
             _sprite[i] = '#';
         }
          
-        _crt = Enumerable.Repeat('.', 240).ToArray();        
+        _crt = Enumerable.Repeat(' ', 240).ToArray();        
     }
 
     public static Int32 Calculate(List<String> inputs)
@@ -76,49 +76,44 @@ public static class CathodeRayTube
 
         var instructions = inputs.Select(x => x.Split(' ')).ToList();
 
-        Int32 cycle = 1;
+        Int32 shift = 0;
+        Int32 oldShift = 0;
+        Int32 cycle = 0;
         Int32 instruction = 0;
 
         PrintCrt(_crt);
 
         Console.WriteLine();
 
-        // Print(_sprite);
-
         for (int i = 0; i < instructions.Count; i++)
         {
-            var shift = 0;
+            // Cycle 1 for each instruction
+            cycle++;
+            Console.WriteLine($"During cycle {cycle}: CRT draws pixel in position {cycle - 1}");
+            _crt[cycle - 1] = MatchWithSprite((cycle - 1) % 40) ? '#' : '.';
+            PrintCrt(_crt);
+
+            // Cycle 2 only for ADDX instructions
+            if (instructions[i].Length > 1)
+            {
+                cycle++;
+                Console.WriteLine($"During cycle {cycle}: CRT draws pixel in position {cycle - 1}");
+                _crt[cycle - 1] = MatchWithSprite((cycle - 1) % 40) && instructions[i].Length > 1
+                                    ? '#'
+                                    : '.';
+                PrintCrt(_crt);
+            }
 
             if (instructions[instruction].Length > 1)
             {
+                oldShift += shift;
                 shift = Int32.Parse(instructions[instruction][1]);
-            }
-
-            if (MatchWithSprite((cycle - 1) % 40))
-            {
-                //Console.WriteLine("Block 1");
-                //Print(_sprite);                    
-                _crt[cycle - 1] = '#';
-                PrintCrt(_crt);
-            }
-
-            Console.WriteLine($"Cycle: {cycle} | Instruction: {shift} | Position: {cycle - 1}");
-            cycle++;
-
-            if (MatchWithSprite((cycle - 1) % 40) && instructions[instruction].Length > 1)
-            {
-                //Console.WriteLine("Block 2");
-                //Print(_sprite);
-                _crt[cycle - 1] = '#';
-                PrintCrt(_crt);
-
-                Console.WriteLine($"Cycle: {cycle} | Instruction: {shift} | Position: {cycle - 1}");
-                cycle++;
-
                 ShiftSprite(shift);
-                Print(_sprite);
             }
             
+            Console.WriteLine($"Finish executing addx {shift} (Register X is now {oldShift + shift + 1})");
+            Print(_sprite);
+
             instruction++;
         }
 
@@ -174,7 +169,7 @@ public static class CathodeRayTube
             {
                 Console.WriteLine();
             }
-            Console.Write(matrix[i] + " ");
+            Console.Write(matrix[i]);
         }
         Console.WriteLine();
     }
@@ -183,7 +178,7 @@ public static class CathodeRayTube
     {
         for (Int32 i = 0; i < matrix.GetLength(0); i++)
         {
-            Console.Write(matrix[i] + " ");
+            Console.Write(matrix[i]);
         }
         Console.WriteLine();
     }
