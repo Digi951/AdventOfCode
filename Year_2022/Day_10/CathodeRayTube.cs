@@ -77,11 +77,11 @@ public static class CathodeRayTube
         var instructions = inputs.Select(x => x.Split(' ')).ToList();
 
         Int32 shift = 0;
-        Int32 oldShift = 0;
+        Int32 register = 0;
         Int32 cycle = 0;
         Int32 instruction = 0;
 
-        PrintCrt(_crt);
+        //PrintCrt(_crt);
 
         Console.WriteLine();
 
@@ -89,8 +89,9 @@ public static class CathodeRayTube
         {
             // Cycle 1 for each instruction
             cycle++;
+            Console.WriteLine($"Begin executing {instructions[i][0]} {(instructions[i].Length > 1 ? instructions[i][1] : "")}");
             Console.WriteLine($"During cycle {cycle}: CRT draws pixel in position {cycle - 1}");
-            _crt[cycle - 1] = MatchWithSprite((cycle - 1) % 40) ? '#' : '.';
+            _crt[cycle - 1] = MatchWithSprite((cycle - 1) % 40) ? '#' : ' ';
             PrintCrt(_crt);
 
             // Cycle 2 only for ADDX instructions
@@ -100,18 +101,37 @@ public static class CathodeRayTube
                 Console.WriteLine($"During cycle {cycle}: CRT draws pixel in position {cycle - 1}");
                 _crt[cycle - 1] = MatchWithSprite((cycle - 1) % 40) && instructions[i].Length > 1
                                     ? '#'
-                                    : '.';
+                                    : ' ';
                 PrintCrt(_crt);
             }
 
             if (instructions[instruction].Length > 1)
             {
-                oldShift += shift;
+                register = GetMiddleposition();
                 shift = Int32.Parse(instructions[instruction][1]);
+
+                if (register + shift < 0)
+                {
+                    register = 0;
+                }
+                else if (register + shift > _sprite.Length - 1)
+                {
+                    register = _sprite.Length - 1;
+                }
+                else
+                {
+                    register += shift;
+                }
+
+                
                 ShiftSprite(shift);
+                Console.WriteLine($"Finish executing addx {shift} (Register X is now {register})");
+            }
+            else
+            {
+                Console.WriteLine("Finish executing noop");
             }
             
-            Console.WriteLine($"Finish executing addx {shift} (Register X is now {oldShift + shift + 1})");
             Print(_sprite);
 
             instruction++;
@@ -131,34 +151,46 @@ public static class CathodeRayTube
         return false;
     }
 
-    private static void ShiftSprite(Int32 shift)
+    private static Int32 GetMiddleposition()
     {
         Int32 middlePosition = 0;
 
-        // Console.WriteLine(shift);
-
         for (int i = 0; i < _sprite!.Length; i++)
         {
-            if (_sprite[i] == '#')
+            if (i < _sprite.Length - 2
+                && _sprite[i] == '#' && _sprite[i + 1] == '#' && _sprite[i + 2] == '#')
             {
                 middlePosition = i + 1;
                 break;
             }
+            if (_sprite[0] == '#' && _sprite[1] != '#')
+            {
+                middlePosition = - 1;
+                break;
+            }
+            if (_sprite[_sprite.Length - 2] != '#' && _sprite[_sprite.Length - 1] == '#')
+            {
+                middlePosition = _sprite.Length;
+                break;
+            }
         }
 
-        if (middlePosition + shift >= 0 && middlePosition + shift < _sprite.Length)
-        {
-            middlePosition += shift;
-        }
+        return middlePosition;
+    }
 
-        Int32 startIndex = middlePosition == 0 ? middlePosition : middlePosition - 1;
-        Int32 endIndex = middlePosition == 39 ? middlePosition : middlePosition + 1;
+    private static void ShiftSprite(Int32 shift)
+    {
+        Int32 middlePosition = GetMiddleposition();
+
+        middlePosition += shift;
+        Int32 startIndex = middlePosition - 1;
+        Int32 endIndex = middlePosition + 1;
 
         _sprite = Enumerable.Repeat('.', 40).ToArray();
-        for (int i = startIndex; i <= endIndex; i++)
-        {
-            _sprite[i] = '#';
-        }
+
+        if (startIndex >= 0) { _sprite[startIndex] = '#'; }
+        if (middlePosition >= 0 && middlePosition < _sprite.Length) { _sprite[middlePosition] = '#'; }
+        if (endIndex < _sprite.Length) { _sprite[endIndex] = '#'; }
     }
 
     private static void PrintCrt(Char[] matrix)

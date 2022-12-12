@@ -48,7 +48,8 @@ public class Run2022
         // var result = NoSpaceLeftOnDevice.Calculate(input);
 
         // Day 10
-        var input = GlobalHelper.GlobalFileReader.GetAllLines(@"/Users/digi/Programmierung/AdventToCode/Year_2022/Day_10/Instructions.txt");
+        //var input = GlobalHelper.GlobalFileReader.GetAllLines(@"/Users/digi/Programmierung/AdventToCode/Year_2022/Day_10/Instructions.txt");
+        var input = GlobalHelper.GlobalFileReader.GetAllLines(@"C:\Users\anm2\Documents\Projekte\AdventToCode\Year_2022\Day_10\Instructions.txt");
         // var result = CathodeRayTube.Calculate(input);
         CathodeRayTube.Calculate2(input);
 
